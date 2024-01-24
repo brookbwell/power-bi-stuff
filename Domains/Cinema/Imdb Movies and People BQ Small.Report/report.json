@@ -1,0 +1,129 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Sample 1940 onwards",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter4315db9b250da46d9c7b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Language\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3f4ff8dada23906a3765\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":270.4433497536946,\"height\":720,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Movies.Country\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(Movies.Title Id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Country\"},\"Name\":\"Movies.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2},\"Name\":\"CountNonNull(Movies.Title Id)\",\"NativeReferenceName\":\"Count of Title Id1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"Filter8d6d5e2d727aff3f8428\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Country\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Country\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Country\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}],\"valueMap\":{\"0\":\"(Blank)\"}}]}}]",
+          "height": 720.00,
+          "width": 270.44,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c5e449638575ce1c2015\",\"layouts\":[{\"id\":0,\"position\":{\"x\":270.4433497536946,\"y\":0,\"z\":0,\"width\":1009.9507389162561,\"height\":720,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Movies.Country\"}],\"Y\":[{\"queryRef\":\"Count(Movies.Title Id)\"}],\"Category\":[{\"queryRef\":\"Movies.Year Of Release\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Country\"},\"Name\":\"Movies.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2},\"Name\":\"Count(Movies.Title Id)\",\"NativeReferenceName\":\"Count of Title Id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year Of Release\"},\"Name\":\"Movies.Year Of Release\",\"NativeReferenceName\":\"Year Of Release\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Country\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Country\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Country\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 720.00,
+          "width": 1009.95,
+          "x": 270.44,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Sample 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection49a55759afe4a9c4ecf0",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1db37291d58adfd2198c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":369.82935153583617,\"z\":2000,\"width\":649.9658703071673,\"height\":350.17064846416383,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Movies.Imdb Rating\"}],\"X\":[{\"queryRef\":\"Movies.Number Of Votes\",\"active\":true}],\"Category\":[{\"queryRef\":\"Movies.Title Id\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Imdb Rating\"}},\"Function\":1},\"Name\":\"Movies.Imdb Rating\",\"NativeReferenceName\":\"Average of Imdb Rating\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Votes\"}},\"Function\":0},\"Name\":\"Movies.Number Of Votes\",\"NativeReferenceName\":\"Sum of Number Of Votes\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"},\"Name\":\"Movies.Title Id\",\"NativeReferenceName\":\"Title Id\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter4f3be7a45aaa6c8fe71c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Imdb Rating\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Imdb Rating\"}},\"Right\":{\"Literal\":{\"Value\":\"50L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 350.17,
+          "width": 649.97,
+          "x": 0.00,
+          "y": 369.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"328b0f5106d4c5fe4be2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":649.9658703071673,\"y\":9.829351535836178,\"z\":1000,\"width\":630.3071672354948,\"height\":360,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Movies.Language\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(Movies.Number Of Titles)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Language\"},\"Name\":\"Movies.Language\",\"NativeReferenceName\":\"Language\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0},\"Name\":\"Sum(Movies.Number Of Titles)\",\"NativeReferenceName\":\"Sum of Number Of Titles\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"Filter37f492f01abdcd27b8a8\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Language\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Language\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Language\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}],\"valueMap\":{\"0\":\"(Blank)\"}}]}}]",
+          "height": 360.00,
+          "width": 630.31,
+          "x": 649.97,
+          "y": 9.83,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"539c104359f830d43521\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":10,\"z\":0,\"width\":640.1970443349754,\"height\":360,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Movies.Year Of Release\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Sum(Movies.Number Of Titles)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year Of Release\"},\"Name\":\"Movies.Year Of Release\",\"NativeReferenceName\":\"Year Of Release\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0},\"Name\":\"Sum(Movies.Number Of Titles)\",\"NativeReferenceName\":\"Sum of Number Of Titles\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 640.20,
+          "x": 10.00,
+          "y": 10.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ddc94bbd13a63fd359c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":649.9658703071673,\"y\":369.82935153583617,\"z\":3000,\"width\":630.3071672354948,\"height\":350.17064846416383,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Movies.Number Of Titles)\"}],\"Category\":[{\"queryRef\":\"Movies.Genres 1St\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0},\"Name\":\"Sum(Movies.Number Of Titles)\",\"NativeReferenceName\":\"Sum of Number Of Titles\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genres 1St\"},\"Name\":\"Movies.Genres 1St\",\"NativeReferenceName\":\"Genres 1St\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"Filter37f492f01abdcd27b8a8\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Or\":{\"Left\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Language\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}},\"Right\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genres 1St\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Genres 1St\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Language\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Genres 1St\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}],\"valueMap\":{\"0\":\"(Blank)\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Movies\"}},\"Property\":\"Language\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}],\"valueMap\":{\"1\":\"(Blank)\"}}]}}]",
+          "height": 350.17,
+          "width": 630.31,
+          "x": 649.97,
+          "y": 369.83,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Counts",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection7fd89b7243064e438af1",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0de74a1f45d9253f13fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":595.9044368600682,\"y\":254.94880546075086,\"z\":1000,\"width\":580.5460750853242,\"height\":235.90443686006827}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Count(People.Person Name Id)\"},{\"queryRef\":\"Sum(People.Number Of People)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"People\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Person Name Id\"}},\"Function\":2},\"Name\":\"Count(People.Person Name Id)\",\"NativeReferenceName\":\"Count of Person Name Id\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Number Of People\"}},\"Function\":0},\"Name\":\"Sum(People.Number Of People)\",\"NativeReferenceName\":\"Sum of Number Of People\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Person Name Id\"}},\"Function\":2}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 235.90,
+          "width": 580.55,
+          "x": 595.90,
+          "y": 254.95,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ba1a12a6753b3680b81d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":595.9044368600682,\"y\":41.774744027303754,\"z\":0,\"width\":542.4573378839591,\"height\":191.0580204778157}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Count(Movies.Title Id)\"},{\"queryRef\":\"Sum(Movies.Number Of Titles)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2},\"Name\":\"Count(Movies.Title Id)\",\"NativeReferenceName\":\"Count of Title Id\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number Of Titles\"}},\"Function\":0},\"Name\":\"Sum(Movies.Number Of Titles)\",\"NativeReferenceName\":\"Sum of Number Of Titles\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title Id\"}},\"Function\":2}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 191.06,
+          "width": 542.46,
+          "x": 595.90,
+          "y": 41.77,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

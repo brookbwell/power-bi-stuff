@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Imdb Movies and People BQ Small.Dataset"
+    },
+    "byConnection": null
+  }
+}

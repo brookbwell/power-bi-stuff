@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 919.38305001469382,
+            "y": 25.5
+          },
+          "nodeIndex": "Movies",
+          "nodeLineageTag": "7ed2b768-ca84-4ee2-a3dd-16fd1f128194",
+          "size": {
+            "height": 804,
+            "width": 254
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 614.20156119318528,
+            "y": 108.34469795984481
+          },
+          "nodeIndex": "MoviesCast",
+          "nodeLineageTag": "72db31ca-06b1-463a-ac69-3d3ffc361b98",
+          "size": {
+            "height": 220,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 119.48511077959769
+          },
+          "nodeIndex": "People",
+          "nodeLineageTag": "1faf77bf-897b-4ae4-9944-fc7beb67a9af",
+          "size": {
+            "height": 258,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1390.3830500146937,
+            "y": 208.5
+          },
+          "nodeIndex": "GenreRank",
+          "nodeLineageTag": "3f2b9341-54bc-41b2-97f3-4ca8d2e459fe",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
