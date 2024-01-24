@@ -49,6 +49,7 @@
       },
       {
         "name": "5f6fb4c4-b3ca-4c95-875f-05177994c5cf",
+        "crossFilteringBehavior": "bothDirections",
         "fromColumn": "Person Name Id",
         "fromTable": "MoviesCast",
         "toColumn": "Person Name Id",
@@ -735,6 +736,20 @@
           }
         ],
         "lineageTag": "3f2b9341-54bc-41b2-97f3-4ca8d2e459fe",
+        "measures": [
+          {
+            "name": "Tom Cruise Films",
+            "expression": "CALCULATE(COUNTROWS(Movies),FILTER (People,People[Person Name]=\"Tom Cruise\"))",
+            "formatString": "0",
+            "lineageTag": "8c4edd8d-365e-4dc8-89b0-bcdcb060f88c"
+          },
+          {
+            "name": "Cate Blanchett Films",
+            "expression": "CALCULATE(COUNTROWS(Movies),FILTER (People,People[Person Name]=\"Cate Blanchett\"))",
+            "formatString": "0",
+            "lineageTag": "63ac4b33-da27-4ef9-8c25-badb60896df5"
+          }
+        ],
         "partitions": [
           {
             "name": "GenreRank",
