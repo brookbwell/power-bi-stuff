@@ -135,11 +135,11 @@
       "ordinal": 3,
       "visualContainers": [
         {
-          "config": "{\"name\":\"4c743de0b12e72d97caf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":715.1596638655462,\"y\":142.78991596638656,\"z\":0,\"width\":300.10084033613447,\"height\":300.10084033613447}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Movies.Title\",\"active\":true}],\"Values\":[{\"queryRef\":\"GenreRank.Tom Cruise Films\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GenreRank\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title\"},\"Name\":\"Movies.Title\",\"NativeReferenceName\":\"Title\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Tom Cruise Films\"},\"Name\":\"GenreRank.Tom Cruise Films\",\"NativeReferenceName\":\"Tom Cruise Films\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Tom Cruise Films\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"4c743de0b12e72d97caf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":583.2605042016808,\"y\":142.78991596638656,\"z\":0,\"width\":634.0840336134454,\"height\":300.10084033613447}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Movies.Title\",\"active\":true}],\"Values\":[{\"queryRef\":\"GenreRank.Tom Cruise Films\"},{\"queryRef\":\"GenreRank.Dan Brown Films\"},{\"queryRef\":\"GenreRank.Cate Blanchett Films\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GenreRank\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Movies\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title\"},\"Name\":\"Movies.Title\",\"NativeReferenceName\":\"Title\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Tom Cruise Films\"},\"Name\":\"GenreRank.Tom Cruise Films\",\"NativeReferenceName\":\"Tom Cruise Films\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Dan Brown Films\"},\"Name\":\"GenreRank.Dan Brown Films\",\"NativeReferenceName\":\"Dan Brown Films\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Cate Blanchett Films\"},\"Name\":\"GenreRank.Cate Blanchett Films\",\"NativeReferenceName\":\"Cate Blanchett Films\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Tom Cruise Films\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 300.10,
-          "width": 300.10,
-          "x": 715.16,
+          "width": 634.08,
+          "x": 583.26,
           "y": 142.79,
           "z": 0.00
         },

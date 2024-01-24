@@ -747,7 +747,13 @@
             "name": "Cate Blanchett Films",
             "expression": "CALCULATE(COUNTROWS(Movies),FILTER (People,People[Person Name]=\"Cate Blanchett\"))",
             "formatString": "0",
-mit -m             "lineageTag": "63ac4b33-da27-4ef9-8c25-badb60896df5"
+            "lineageTag": "63ac4b33-da27-4ef9-8c25-badb60896df5"
+          },
+          {
+            "name": "Dan Brown Films",
+            "expression": "CALCULATE(COUNTROWS(Movies),FILTER (People,People[Person Name]=\"Dan Brown\"))",
+            "formatString": "0",
+            "lineageTag": "d9e9696a-6318-4c58-aa87-9b0a1dcf8df4"
           }
         ],
         "partitions": [
